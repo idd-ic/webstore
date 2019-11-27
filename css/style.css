@@ -58,7 +58,6 @@ a {
 .filters {
     grid-area: "b";
 }
-
 .sale {
     max-width: 1500px;
     margin-left: auto;
@@ -73,9 +72,6 @@ a {
 .filterdrop {
     visibility: hidden;
     height: 0px;
-}
-.sale> .sort-content {
-    dis
 }
 .box {
     padding: 2.5em;
@@ -95,7 +91,6 @@ del {
 }
 /* PRO 2 */
 
-}
 .two> .deetspro2 .deets2btn:hover{
     background-color: var(--dos);
 }
