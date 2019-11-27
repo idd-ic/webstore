@@ -1,0 +1,354 @@
+:root {
+    /*colours*/
+    --fonts: #000000;
+    --bars: #3a3a3a;
+    --bg: white;
+    --bars2: #c4c4c4;
+    --attention: #93032e;
+    /*fonts*/
+
+}
+body {
+    color: var(--fonts);
+    background-color: var(--bg);
+    text-align: center;
+}
+.topbar {
+    background-color: var(--bars2);
+    display: grid;
+    grid-template-columns: 2fr 4fr 0.5fr 1.5fr;
+    align-content: center;
+    padding-top: 1em;
+}
+a {
+    text-decoration: none;
+    color: var(--txt);
+}
+.logo {
+    width: 10vh;
+    justify-self: right;
+    padding: 0.5em;
+}
+.menubtn {
+    visibility: hidden;
+    height: 0px;
+}
+.dropdownmenu {
+    justify-self: center;
+    padding:0.5em;
+}
+.menu-content ul> li {
+    display: inline-block;
+    padding: 1em;
+}
+.srch {
+    justify-self: right;
+    align-self: center;
+    padding-right: 0.5em;
+}
+.cart {
+    justify-self: left;
+    align-self: center;
+    padding-left:0.5em;
+}
+
+.sort {
+    grid-area: "a";
+}
+.filters {
+    grid-area: "b";
+}
+
+.sale {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    display: grid;
+    grid-template-areas:
+    "0 a"
+    "b 0"
+    "b 0";
+}
+.filterdrop {
+    visibility: hidden;
+    height: 0px;
+}
+.sale> .sort-content {
+    dis
+}
+.box {
+    padding: 2.5em;
+}
+img {
+    border-radius: 15%;
+    width: 40%;
+}
+del {
+    color: var(--attention);
+}
+
+/* PRO 1*/
+
+.container> .one> .final> .check {
+    width: 60%;
+}
+/* PRO 2 */
+
+}
+.two> .deetspro2 .deets2btn:hover{
+    background-color: var(--dos);
+}
+.two .deetspro2 ul {
+    overflow: hidden; 
+    height: 0; 
+    transition: height 0.3s;
+}
+.two .deetspro2:hover ul {
+    height: 230px;  
+    display: block; 
+}
+.deetspro2 li {
+    list-style: none;
+    background-color: none;
+}
+.deetspro2> .deets2btn {
+    background-color: none;
+}
+.container> .two> .final> .check {
+    width: 60%;
+}
+
+/* PRO 3*/
+.thr> .deetspro3 .deets3btn:hover{
+    background-color:var(--dos);
+}
+.thr .deetspro3 ul {
+    overflow: hidden; 
+    height: 0; 
+    transition: height 0.3s;
+}
+.thr .deetspro3:hover ul {
+    height: 200px;  
+    display: block; 
+}
+.deetspro3 li {
+    list-style: none;
+    background-color: none;
+}
+.deetspro3> .deets3btn {
+    background-color: none;
+}
+.container> .thr> .final> .check {
+    width: 60%;
+}
+
+
+
+/* PRO 4*/
+.fou> .deetspro4 .deets4btn:hover{
+    background-color: var(-dos);
+}
+.fou .deetspro4 ul {
+    overflow: hidden; 
+    height: 0; 
+    transition: height 0.3s;
+}
+.fou .deetspro4:hover ul {
+    height: 200px;  
+    display: block; 
+}
+.deetspro4 li {
+    list-style: none;
+    background-color: none;
+}
+
+.deetspro4> .deets4btn {
+    background-color: none;
+}
+.container> .fou> .final> .check {
+    width: 60%;
+}
+
+
+
+/* PRO 5*/
+.fiv> .deetspro5 .deets5btn:hover{
+    background-color: var(--dos);
+}
+.fiv .deetspro5 ul {
+    overflow: hidden; 
+    height: 0; 
+    transition: height 0.3s;
+}
+.fiv .deetspro5:hover ul {
+    height: 200px;  
+    display: block; 
+}
+.deetspro5 li {
+    list-style: none;
+    background-color: none;
+}
+.deetspro5> .deets5btn {
+    background-color: none;
+}
+.container> .fiv> .final> .check {
+    width: 60%;
+}
+
+
+
+
+/* PRO 6*/
+.six> .deetspro6 .deets6btn:hover{
+    background-color: var(--dos);
+}
+.six .deetspro6 ul {
+    overflow: hidden; 
+    height: 0; 
+    transition: height 0.3s;
+}
+.six .deetspro6:hover ul {
+    height: 200px;  
+    display: block; 
+}
+.deetspro6 li {
+    list-style: none;
+    background-color: none;
+}
+.deetspro6> .deets6btn {
+    background-color: none;
+}
+.container> .six> .final> .check {
+    width: 60%;
+}
+
+
+
+
+/* FOOTERS */
+.flip {
+    background-color: var(--bars2);
+    margin-top: 5em;
+}
+footer {
+    text-align: center;
+    color: var(--fonts);
+}
+
+.flip> .pribado> ul> li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em;
+}
+.flip> .pribado> ul>li a {
+    color: var(--tres);
+    font-family: var(--body);
+    text-decoration: none;
+    font-weight: bold;
+}
+.pages {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.flip> .sosyal> ul> li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.flip> .sosyal> ul> li {
+    margin: 2em;
+}
+footer> .pages> ul> li {
+    color: var(--tres);
+}
+.pages {
+    margin-top: 3em;
+}
+.pages> ul {
+    list-style: none;
+    text-align: center;
+}
+.pages> ul> li {
+    display: inline-block;
+    padding: 1em;
+}
+.pages> ul> li a {
+    color: var(--tres);
+    font-family: var(--body);
+    text-decoration: none;
+}
+.subs {
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+  }
+.menu-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: var(--quat);
+}
+.menu-content ul {
+    padding: 12px 16px;
+    list-style: none;
+    display: block;
+}
+.menu-content ul:hover {
+    background-color: none;
+}
+.dropdownmenu:hover .menu-content {
+    display: block;
+}
+.dropdownmenu:hover .menubtn {
+    background-color: var(--dos);
+}
+.dropdownmenu> .menu-content ul> li> .lifestyle li {
+    list-style: none;
+    overflow: hidden; 
+    height: 0; 
+    background-color: none; 
+    transition: height 0.3s;
+}
+.dropdownmenu> .menu-content ul> li:hover> .lifestyle li {
+    height:20px; 
+    background-color: none; 
+    color: var(--dos);
+    display: block;
+}
+*/
