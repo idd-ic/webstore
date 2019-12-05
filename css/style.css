@@ -51,27 +51,38 @@ a {
     align-self: center;
     padding-left:0.5em;
 }
-
+button:hover {
+    background-color: var(--bars2);
+}
 .sort {
-    grid-area: "a";
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+}
+.sort-content {
+    text-align: right;
 }
 .filters {
-    grid-area: "b";
+    grid-area: a;
+}
+.filters> div {
+    padding: 1em;
+}
+.container {
+    grid-area: c;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
 }
 .sale {
-    max-width: 1500px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
     display: grid;
-    grid-template-areas:
-    "0 a"
-    "b 0"
-    "b 0";
-}
-.filterdrop {
-    visibility: hidden;
-    height: 0px;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: 
+    "a b b"
+    "a c c"
+    "a c c";
 }
 .box {
     padding: 2.5em;
@@ -84,158 +95,33 @@ del {
     color: var(--attention);
 }
 
-/* PRO 1*/
-
-.container> .one> .final> .check {
-    width: 60%;
-}
-/* PRO 2 */
-
-.two> .deetspro2 .deets2btn:hover{
-    background-color: var(--dos);
-}
-.two .deetspro2 ul {
-    overflow: hidden; 
-    height: 0; 
-    transition: height 0.3s;
-}
-.two .deetspro2:hover ul {
-    height: 230px;  
-    display: block; 
-}
-.deetspro2 li {
-    list-style: none;
-    background-color: none;
-}
-.deetspro2> .deets2btn {
-    background-color: none;
-}
-.container> .two> .final> .check {
-    width: 60%;
-}
-
-/* PRO 3*/
-.thr> .deetspro3 .deets3btn:hover{
-    background-color:var(--dos);
-}
-.thr .deetspro3 ul {
-    overflow: hidden; 
-    height: 0; 
-    transition: height 0.3s;
-}
-.thr .deetspro3:hover ul {
-    height: 200px;  
-    display: block; 
-}
-.deetspro3 li {
-    list-style: none;
-    background-color: none;
-}
-.deetspro3> .deets3btn {
-    background-color: none;
-}
-.container> .thr> .final> .check {
-    width: 60%;
-}
 
 
-
-/* PRO 4*/
-.fou> .deetspro4 .deets4btn:hover{
-    background-color: var(-dos);
+/*PRODUCTS*/
+.check {
+    width: 30%;
+    padding: 0.25em;
 }
-.fou .deetspro4 ul {
-    overflow: hidden; 
-    height: 0; 
-    transition: height 0.3s;
+.fave a{
+    margin-top: 3em;;
 }
-.fou .deetspro4:hover ul {
-    height: 200px;  
-    display: block; 
-}
-.deetspro4 li {
-    list-style: none;
-    background-color: none;
-}
-
-.deetspro4> .deets4btn {
-    background-color: none;
-}
-.container> .fou> .final> .check {
-    width: 60%;
-}
-
-
-
-/* PRO 5*/
-.fiv> .deetspro5 .deets5btn:hover{
-    background-color: var(--dos);
-}
-.fiv .deetspro5 ul {
-    overflow: hidden; 
-    height: 0; 
-    transition: height 0.3s;
-}
-.fiv .deetspro5:hover ul {
-    height: 200px;  
-    display: block; 
-}
-.deetspro5 li {
-    list-style: none;
-    background-color: none;
-}
-.deetspro5> .deets5btn {
-    background-color: none;
-}
-.container> .fiv> .final> .check {
-    width: 60%;
-}
-
-
-
-
-/* PRO 6*/
-.six> .deetspro6 .deets6btn:hover{
-    background-color: var(--dos);
-}
-.six .deetspro6 ul {
-    overflow: hidden; 
-    height: 0; 
-    transition: height 0.3s;
-}
-.six .deetspro6:hover ul {
-    height: 200px;  
-    display: block; 
-}
-.deetspro6 li {
-    list-style: none;
-    background-color: none;
-}
-.deetspro6> .deets6btn {
-    background-color: none;
-}
-.container> .six> .final> .check {
-    width: 60%;
-}
-
-
 
 
 /* FOOTERS */
-.flip {
-    background-color: var(--bars2);
-    margin-top: 5em;
-}
+
 footer {
     text-align: center;
     color: var(--fonts);
 }
-
+.flip {
+    background-color: var(--bars2);
+    margin-top: 9em;
+}
 .flip> .pribado> ul> li {
     list-style: none;
     display: inline-block;
     text-align: center;
-    padding: 0.5em;
+    padding: 2em;
 }
 .flip> .pribado> ul>li a {
     color: var(--tres);
@@ -243,9 +129,14 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
+.nxt {
+    border-radius: 10%;
+    padding:0.5em;
+}
 .pages {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 7em;
 }
 .flip> .sosyal> ul> li {
     list-style: none;
@@ -258,10 +149,8 @@ footer {
 footer> .pages> ul> li {
     color: var(--tres);
 }
-.pages {
-    margin-top: 3em;
-}
 .pages> ul {
+    text-align: right;
     list-style: none;
     text-align: center;
 }
@@ -276,6 +165,10 @@ footer> .pages> ul> li {
 }
 .subs {
     padding: 1em;
+}
+.subs> input, .subscribe {
+    padding:0.5em;
+    border-radius: 5%;
 }
 
 

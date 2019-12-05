@@ -45,244 +45,112 @@
   
     </header>
 
-  <main>
-    <article class="sale">
+    <main>
+      <article class="sale">
 
-      <section class="filters"></section>
-        <button class="filterdrop">Filters</button>
-        <div class="filter-content">
-          <div class="colour">
-            <h3>Colour</h3>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </div>
+        <section class="filters">
+            <h1><strong> Browse by:</strong></h1>
+            <div class="colour">
+              <p><strong>Colour</strong></p>
+              <ul>
+                <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
+                <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
+                <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
+                <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
+                <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+              </ul>
+            </div>
 
-          <div class="size">
-            <h3>Sizes</h3>
-            <ul>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="black">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="black">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="white">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="red">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="blue">XL</label></li>
-            </ul> 
+            <div class="size">
+              <p><strong>Sizes</strong></p>
+              <ul>
+                <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="black">XS</label></li>
+                <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="black">S</label></li>
+                <li><input type="checkbox" name="size" value="md" id="md"> <label for="white">M</label></li>
+                <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="red">L</label></li>
+                <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="blue">XL</label></li>
+              </ul> 
+            </div> 
+
+            <div class="price">
+              <p><strong>Price</strong></p>
+              <ul>
+                <li>
+                  <input type="radio" name="cad">
+                  <label for="cheapest"> Less than C$25</label>
+                </li>
+                <li>
+                  <input type="radio" name="cad">
+                  <label for="affordable"> C$25-$50</label>
+                </li>
+                <li>
+                  <input type="radio" name="cad">
+                  <label for="eh"> C$51-$100</label>
+                </li>
+                <li>
+                  <input type="radio" name="cad">
+                  <label for="wow xpensive"> C$101-$200</label>
+                </li>
+                <li>
+                  <input type="radio" name="cad">
+                  <label for="must be rich"> C$202-$500</label>
+                </li>
+                <li>
+                  <input type="radio" name="cad">
+                  <label for="can buy any"> C$500 and above</label>
+                </li>
+              </ul>
+            </div> 
           </div> 
+        </section>
 
-          <div class="price">
-            <h3>Price</h3>
-            <ul>
-              <li>
-                <input type="radio" name="cad">
-                <label for="cheapest"> Less than C$25</label>
-              </li>
-              <li>
-                <input type="radio" name="cad">
-                <label for="affordable"> C$25-$50</label>
-              </li>
-              <li>
-                <input type="radio" name="cad">
-                <label for="eh"> C$51-$100</label>
-              </li>
-              <li>
-                <input type="radio" name="cad">
-                <label for="wow xpensive"> C$101-$200</label>
-              </li>
-              <li>
-                <input type="radio" name="cad">
-                <label for="must be rich"> C$202-$500</label>
-              </li>
-              <li>
-                <input type="radio" name="cad">
-                <label for="can buy any"> C$500 and above</label>
-              </li>
-            </ul>
-          </div> 
-        </div> 
-      </section>
-
-      <section class="sort"> 
-          <h1>Sale</h1>
-          <div class="sort-content">
-            <select name="sort" id="sort">
-              <option disabled selected value="">Sort by Price</option>
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-
-      <section class="container" id="container">   
-        <!--
-        <article class="box one">
-            <img src="/img/d.black.jpg" alt="Product Image">
-            <div class="intro">
-              <h3>That Dress Tho</h3>
-              <span><del>$50.00</del>       <ins>$39.00</ins></span>
+        <section class="sort"> 
+            <h1>Sale</h1>
+            <div class="sort-content">
+              <select name="toggle" id="toggle">
+                <option disabled selected value="">Change View</option>
+                <option value="grid-view">Grid View</option>
+                <option value="list-view">List View</option>
+              </select>
+              <select name="sort" id="sort">
+                <option disabled selected value="">Sort by Price</option>
+                <option value="price-high">Price, highest to lowest</option>
+                <option value="price-low">Price, lowest to highest</option>
+                <option value="newest">Newest releases</option>
+              </select>
             </div>
-                  
-          <section class="deetspro1">
-            <ul>
-              <li><b>Very comfy sleeveless corduroy dress.</b> </li>
-              <li><input type="radio"> <span>Light Brown</span> <input type="radio">  <span> Indigo</span><input type="radio">  <span>White</span></li>
-              <li><input type="radio"> <span>M</span> <input type="radio">  <span>L</span> <input type="radio">  <span>XL</span></li>
-              <li><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></li>
-            </ul>
-          </section>
-                  
-          <section class="final">
-            <button class="check"> Add to Bag </button>
-            <button class="fave" type="button"><i class="material-icons">favorite_border</i></button>
-            </section>
-        </article> 
-       
-       
-        <article class="box two">
-            <img src="/img/o.brown.jpg" alt="Product Image">
-            <div class="intro">
-              <h3>Modern Jacket</h3>
-              <span><del>$90.00</del>       <ins>$70.00</ins></span>
-            </div>
-                  
-          <section class="deetspro1">
-            <ul>
-              <li><b>Perfect for spring and layering during winter</b> </li>
-              <li><input type="radio"> <span>Light Brown</span> <input type="radio">  <span> Indigo</span><input type="radio">  <span>White</span></li>
-              <li><input type="radio"> <span>M</span> <input type="radio">  <span>L</span> <input type="radio">  <span>XL</span></li>
-              <li><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></li>
-            </ul>
-          </section>
-                  
-          <section class="final">
-            <button class="check"> Add to Bag </button>
-            <button class="fave" type="button"><i class="material-icons">favorite_border</i></button>
-            </section>
-        </article> 
- 
-        
-        <article class="box thr">
-            <img src="/img/p.pink.jpg" alt="Product Image">
-            <div class="intro">
-              <h3>Mean Girl Pants</h3>
-              <span><del>$150.00</del>       <ins>$120.00</ins></span>
-            </div>
-                  
-          <section class="deetspro1">
-            <ul>
-              <li><b>A very beautiful flare corduroy pants.</b> </li>
-              <li><input type="radio"> <span>Light Brown</span> <input type="radio">  <span> Indigo</span><input type="radio">  <span>White</span></li>
-              <li><input type="radio"> <span>M</span> <input type="radio">  <span>L</span> <input type="radio">  <span>XL</span></li>
-              <li><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></li>
-            </ul>
-          </section>
-                  
-          <section class="final">
-            <button class="check"> Add to Bag </button>
-            <button class="fave" type="button"><i class="material-icons">favorite_border</i></button>
-            </section>
-        </article> 
+        </section>
 
-       
-        <article class="box fou">
-            <img src="/img/s.grey.jpg" alt="Product Image">
-            <div class="intro">
-              <h3>Where'd You Get That Skirt</h3>
-              <span><del>$60.00</del>       <ins>$49.00</ins></span>
-            </div>
-                  
-          <section class="deetspro1">
-            <ul>
-              <li><b>A chic vintage-inspired skirt</b> </li>
-              <li><input type="radio"> <span>Light Brown</span> <input type="radio">  <span> Indigo</span><input type="radio">  <span>White</span></li>
-              <li><input type="radio"> <span>M</span> <input type="radio">  <span>L</span> <input type="radio">  <span>XL</span></li>
-              <li><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></li>
-            </ul>
-          </section>
-                  
-          <section class="final">
-            <button class="check"> Add to Bag </button>
-            <button class="fave" type="button"><i class="material-icons">favorite_border</i></button>
-            </section>
-        </article> 
+        <section class="container" id="container">   
+      
 
-         
-        <article class="box fiv">
-            <img src="/img/sw.turquoise.jpg" alt="Product Image">
-            <div class="intro">
-              <h3>Spring Sweater</h3>
-              <span><del>$50.00</del>       <ins>$39.00</ins></span>
-            </div>
-                  
-          <section class="deetspro1">
-            <ul>
-              <li><b>A mockneck corduroy sweater.</b> </li>
-              <li><input type="radio"> <span>Light Brown</span> <input type="radio">  <span> Indigo</span><input type="radio">  <span>White</span></li>
-              <li><input type="radio"> <span>M</span> <input type="radio">  <span>L</span> <input type="radio">  <span>XL</span></li>
-              <li><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></li>
-            </ul>
-          </section>
-                  
-          <section class="final">
-            <button class="check"> Add to Bag </button>
-            <button class="fave" type="button"><i class="material-icons">favorite_border</i></button>
-            </section>
-        </article> 
 
-       
-        <article class="box six">
-            <img src="/img/t.yellow.jpg" alt="Product Image">
-            <div class="intro">
-              <h3>Spaghetti Top</h3>
-              <span><del>$39.00</del>       <ins>$19.00</ins></span>
-            </div>
-                  
-          <section class="deetspro1">
-            <ul>
-              <li><b>A very flattering spaghetti strap top.</b> </li>
-              <li><input type="radio"> <span>Light Brown</span> <input type="radio">  <span> Indigo</span><input type="radio">  <span>White</span></li>
-              <li><input type="radio"> <span>M</span> <input type="radio">  <span>L</span> <input type="radio">  <span>XL</span></li>
-              <li><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></li>
-            </ul>
-          </section>
-                  
-          <section class="final">
-            <button class="check"> Add to Bag </button>
-            <button class="fave" type="button"><i class="material-icons">favorite_border</i></button>
-            </section>
-    </article> 
+        </section>
+    </main>
 
--->
+
     <footer>
       <div class="pages">
-        <h4>PAGES</h4>
-        <br>
-        <p>1-6 of 28 products found</p>
+        <p>20 of 20</p>
         <ul>
-          <li><a href="#"><img src="https://img.icons8.com/dotty/24/000000/1-circle-c.png"></a></li>
-          <li><a href="#"><img src="https://img.icons8.com/wired/24/000000/2-circle.png"></a></li>
-          <li><a href="#"><img src="https://img.icons8.com/wired/24/000000/3-circle--v1.png"></a></li>
-          <li><a href="#"><img src="https://img.icons8.com/wired/24/000000/4-circle.png"></a></li>
-          <li><a href="#"><img src="https://img.icons8.com/wired/24/000000/5-circle.png"></a></li>
-          <li><a href="product.html"><img src="https://img.icons8.com/wired/24/000000/more-than.png"></a></li>
-        </ul>
-          
+          <li><a href="#">1</a></li>
+          <li><button class="nxt"><a href="product.html">></a></button></li>
+        </ul>    
       </div>
 
-    <!--REF FOR ICONS: https://icons8.com/icon/set/numbers/material-->
+      <!--REF FOR ICONS: https://icons8.com/icon/set/numbers/material-->
 
       <div class="flip">
         <section class="subs">
-          <input placeholder="Get into our mailing list!" type="text">
+          <input placeholder="Get into our mailing list!" type="text"></input>
           <button class="subscribe">Subscribe</button>
         </section>
+
         <section class="sosyal">  
           <ul>
-            <li><a href="https://www.facebook.com/login"><img src="https://img.icons8.com/wired/48/000000/facebook.png"></a></li>
-            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="https://img.icons8.com/wired/48/000000/instagram-new.png"></a></li>
-            <li><a href="https://twitter.com/login"><img src="https://img.icons8.com/wired/48/000000/twitter.png"></a></li>
+            <li><a href="https://www.facebook.com/login"><img src="https://img.icons8.com/wired/96/000000/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="https://img.icons8.com/wired/96/000000/instagram-new.png"></a></li>
+            <li><a href="https://twitter.com/login"><img src="https://img.icons8.com/wired/96/000000/twitter.png"></a></li>
           </ul>
         </section> 
 
