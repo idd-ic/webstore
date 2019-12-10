@@ -17,9 +17,8 @@
   <body>
 
     <header class="topbar">
-
       <div class="logo">
-        <a href="index.html"><img class="logo" src="img/logo.png" alt="corduroys"></a>
+        <a href="index.html"><img class="corduroy" src="img/logo.png" alt="corduroys"></a>
       </div>
 
       <div class="dropdownmenu">
@@ -36,7 +35,7 @@
       </div>
       
       <div class="srch"> 
-        <a href="#"><i class="material-icons">search</i></a>
+        <label for="search"><input type="text" name="searchProducts" id="search" class="srch" value="" placeholder="Search"></label>
       </div>
 
       <div class="cart">
@@ -49,82 +48,74 @@
       <article class="sale">
 
         <section class="filters">
-            <h1><strong> Browse by:</strong></h1>
-            <div class="colour">
-              <p><strong>Colour</strong></p>
-              <ul>
-                <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-                <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-                <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-                <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-                <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-              </ul>
-            </div>
-
-            <div class="size">
-              <p><strong>Sizes</strong></p>
-              <ul>
-                <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="black">XS</label></li>
-                <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="black">S</label></li>
-                <li><input type="checkbox" name="size" value="md" id="md"> <label for="white">M</label></li>
-                <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="red">L</label></li>
-                <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="blue">XL</label></li>
-              </ul> 
-            </div> 
-
-            <div class="price">
-              <p><strong>Price</strong></p>
-              <ul>
-                <li>
-                  <input type="radio" name="cad">
-                  <label for="cheapest"> Less than C$25</label>
-                </li>
-                <li>
-                  <input type="radio" name="cad">
-                  <label for="affordable"> C$25-$50</label>
-                </li>
-                <li>
-                  <input type="radio" name="cad">
-                  <label for="eh"> C$51-$100</label>
-                </li>
-                <li>
-                  <input type="radio" name="cad">
-                  <label for="wow xpensive"> C$101-$200</label>
-                </li>
-                <li>
-                  <input type="radio" name="cad">
-                  <label for="must be rich"> C$202-$500</label>
-                </li>
-                <li>
-                  <input type="radio" name="cad">
-                  <label for="can buy any"> C$500 and above</label>
-                </li>
-              </ul>
-            </div> 
+          <p><strong>Browse by:</strong></p>
+          <hr>
+          <div class="category" id="category">
+            <ul>
+              <li><input type="checkbox" name="cat" id="all" checked="checked" value="all"><label for="all">All sale</label></li>
+              <li><input type="checkbox" name="cat" id="tops" value="tops"><label for="tops">Tops</label></li>
+              <li><input type="checkbox" name="cat" id="jeans" value="jeans"><label for="jeans">Jeans</label></li>
+              <li><input type="checkbox" name="cat" id="skirts" value="skirts"><label for="skirts">Skirts</label></li>
+              <li><input type="checkbox" name="cat" id="sweaters" value="sweaters"><label for="sweaters">Sweaters</label></li>
+              <li><input type="checkbox" name="cat" id="outer" value="outer"><label for="outer">Outerwear</label></li>
+              <li><input type="checkbox" name="cat" id="dress" value="dress"><label for="dress">Dresses</label></li>
+            </ul>
           </div> 
+          
+          <p><strong> Filter by:</strong></p>
+          <hr>
+          <div class="colour">
+            <select name="colour" id="colour" value="colour">
+              <option disabled selected value="colour">Colour</option>
+              <option value="pink" name="pink"><label for="pink">Pink</label></option>
+              <option value="black" name="black"><label for="black">Black</label></option>
+              <option value="brown" name="brown"><label for="brown">Brown</label></option>
+              <option value="grey" name="grey"><label for="grey">Grey</label></option>
+              <option value="green" name="green"><label for="green">Green</label></option>
+              <option value="yellow" name="yellow"><label for="yellow">Yellow</label></option>
+              <option value="orange" name="orange"><label for="orange">Orange</label></option>
+              <option value="blue" name="blue"><label for="blue">Blue</label></option>
+            </select>
+          </div>
+
+          <div class="size">
+            <select name="sizes" id="sizes" value="sizes">
+              <option disabled selected value="sizes">Sizes</option>
+              <option value="XS" name="XS"><label for="XS">XS</label></option>
+              <option value="S" name="S"><label for="S">S</label></option>
+              <option value="M" name="M"><label for="M">M</label></option>
+              <option value="L" name="L"><label for="L">L</label></option>
+              <option value="XL" name="XL"><label for="XL">XL</label></option>
+              <option value="XXL" name="XXL"><label for="XXL">XXL</label></option>
+            </select> 
+          </div> 
+
+          <div class="price">
+            <select name="price" id="price" value="price">
+              <option disabled selected value="price">Price</option>
+              <option value="cheap" name="cheap"><label for="cheap">Less than C$25</label></option>
+              <option value="affordable" name="affordable"><label for="affordable">C$25-$50</label></option>
+              <option value="bitexpensive" name="bitexpensive"><label for="bitexpensive">C$51-$100</label></option>
+              <option value="expensive" name="expensive"><label for="expensive">C$101-$200</label></option>
+              <option value="mustberich" name="mustberich"><label for="mustberich">C$202-$500</label></option>
+              <option value="canbuyany" name="canbuyany"><label for="canbuyany">C$500 and above</label></option>
+            </select>
+          </div>
         </section>
 
         <section class="sort"> 
-            <h1>Sale</h1>
-            <div class="sort-content">
-              <select name="toggle" id="toggle">
-                <option disabled selected value="">Change View</option>
-                <option value="grid-view">Grid View</option>
-                <option value="list-view">List View</option>
-              </select>
-              <select name="sort" id="sort">
-                <option disabled selected value="">Sort by Price</option>
-                <option value="price-high">Price, highest to lowest</option>
-                <option value="price-low">Price, lowest to highest</option>
-                <option value="newest">Newest releases</option>
-              </select>
-            </div>
+          <h1>Sale</h1>
+          <div class="sort-content">
+            <button id="toggle">Toggle View</button>
+            <select name="sort" id="sort">
+              <option disabled selected value="sort-price">Sort by price</option>
+              <option value="price-high">Price, highest to lowest</option>
+              <option value="price-low">Price, lowest to highest</option>
+            </select>
+          </div>
         </section>
 
-        <section class="container" id="container">   
-      
-
-
+        <section class="container" id="container"> 
         </section>
     </main>
 
@@ -134,8 +125,8 @@
         <p>20 of 20</p>
         <ul>
           <li><a href="#">1</a></li>
-          <li><button class="nxt"><a href="product.html">></a></button></li>
-        </ul>    
+          <li><a href="#">></a></li>
+        </ul> 
       </div>
 
       <!--REF FOR ICONS: https://icons8.com/icon/set/numbers/material-->
