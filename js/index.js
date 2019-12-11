@@ -239,7 +239,7 @@ function getContainerAsHtmlString(container) {
 }
 
 function renderContainer(arr){
-    const arrOfContainer = container.map(getContainerAsHtmlString)
+    const arrOfContainer = arr.map(getContainerAsHtmlString)
     const strOfHtmlContainer = arrOfContainer.join('\n');
     
     document.getElementById('container').innerHTML = strOfHtmlContainer;
