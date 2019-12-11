@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css"> 
   </head>
 
 
@@ -35,7 +34,7 @@
       </div>
       
       <div class="srch"> 
-        <label for="search"><input type="text" name="searchProducts" id="search" class="srch" value="" placeholder="Search"></label>
+        <label for="search"><input type="text" name="search" id="search" class="srch" value="" placeholder="Search"></label>
       </div>
 
       <div class="cart">
@@ -64,41 +63,42 @@
           
           <p><strong> Filter by:</strong></p>
           <hr>
-          <div class="colour">
-            <select name="colour" id="colour" value="colour">
-              <option disabled selected value="colour">Colour</option>
-              <option value="pink" name="pink"><label for="pink">Pink</label></option>
-              <option value="black" name="black"><label for="black">Black</label></option>
-              <option value="brown" name="brown"><label for="brown">Brown</label></option>
-              <option value="grey" name="grey"><label for="grey">Grey</label></option>
-              <option value="green" name="green"><label for="green">Green</label></option>
-              <option value="yellow" name="yellow"><label for="yellow">Yellow</label></option>
-              <option value="orange" name="orange"><label for="orange">Orange</label></option>
-              <option value="blue" name="blue"><label for="blue">Blue</label></option>
+          <div class="colours">
+            <select name="colour" id="colour">
+              <option value="all">Colour</option>
+              <option value="pink">Pink</option>
+              <option value="black">Black</option>
+              <option value="brown">Brown</option>
+              <option value="grey">Grey</option>
+              <option value="green">Green</option>
+              <option value="yellow">Yellow</option>
+              <option value="orange">Orange</option>
+              <option value="blue">Blue</option>
+              <option value="red">Red</option>
             </select>
           </div>
 
           <div class="size">
-            <select name="sizes" id="sizes" value="sizes">
-              <option disabled selected value="sizes">Sizes</option>
-              <option value="XS" name="XS"><label for="XS">XS</label></option>
-              <option value="S" name="S"><label for="S">S</label></option>
-              <option value="M" name="M"><label for="M">M</label></option>
-              <option value="L" name="L"><label for="L">L</label></option>
-              <option value="XL" name="XL"><label for="XL">XL</label></option>
-              <option value="XXL" name="XXL"><label for="XXL">XXL</label></option>
+            <select name="sizes" id="sizes">
+              <option value="size">Sizes</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
             </select> 
           </div> 
 
-          <div class="price">
-            <select name="price" id="price" value="price">
-              <option disabled selected value="price">Price</option>
-              <option value="cheap" name="cheap"><label for="cheap">Less than C$25</label></option>
-              <option value="affordable" name="affordable"><label for="affordable">C$25-$50</label></option>
-              <option value="bitexpensive" name="bitexpensive"><label for="bitexpensive">C$51-$100</label></option>
-              <option value="expensive" name="expensive"><label for="expensive">C$101-$200</label></option>
-              <option value="mustberich" name="mustberich"><label for="mustberich">C$202-$500</label></option>
-              <option value="canbuyany" name="canbuyany"><label for="canbuyany">C$500 and above</label></option>
+          <div class="prices">
+            <select name="price" id="prices">
+              <option value="price">Price</option>
+              <option value="cheap">Less than C$25</option>
+              <option value="affordable">C$25-$50</option>
+              <option value="bitexpensive">C$51-$100</option>
+              <option value="expensive">>C$101-$200</option>
+              <option value="mustberich">C$202-$500</option>
+              <option value="canbuyany">C$500 and above</option>
             </select>
           </div>
         </section>
@@ -108,15 +108,15 @@
           <div class="sort-content">
             <button id="toggle">Toggle View</button>
             <select name="sort" id="sort">
-              <option disabled selected value="sort-price">Sort by price</option>
+              <option value="sortPrice">Sort by price</option>
               <option value="price-high">Price, highest to lowest</option>
               <option value="price-low">Price, lowest to highest</option>
             </select>
           </div>
         </section>
 
-        <section class="container" id="container"> 
-        </section>
+        <section class="container" id="container"></section>
+      </article>
     </main>
 
 
